@@ -1,0 +1,125 @@
+/* 기본 설정 */
+body {
+    font-family: 'Gaegu', cursive;
+    background-color: #fefae0;
+    color: #333;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    text-align: center;
+    padding: 50px 0 20px;
+}
+
+header h1 {
+    font-size: 3.5rem;
+    color: #bc6c25;
+    margin: 0;
+}
+
+/* 네비게이션 버튼 */
+nav {
+    margin-bottom: 40px;
+}
+
+.menu-btn {
+    font-family: 'Gaegu', cursive;
+    font-size: 1.8rem;
+    padding: 10px 30px;
+    margin: 0 10px;
+    border: none;
+    border-radius: 50px;
+    background-color: #dda15e;
+    color: white;
+    cursor: pointer;
+    transition: 0.3s;
+    box-shadow: 0 4px 0 #bc6c25;
+}
+
+.menu-btn:hover {
+    transform: translateY(-2px);
+    background-color: #bc6c25;
+}
+
+.menu-btn.active {
+    background-color: #606c38;
+    box-shadow: 0 4px 0 #283618;
+    transform: translateY(2px);
+}
+
+/* 콘텐츠 영역 */
+.content-container {
+    width: 90%;
+    max-width: 700px;
+}
+
+.tab-content {
+    display: none; /* 기본적으로 숨김 */
+    animation: slideUp 0.5s ease-out;
+}
+
+.tab-content.active {
+    display: block; /* 활성화 시 보임 */
+}
+
+@keyframes slideUp {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+}
+
+/* 카드 디자인 */
+.card {
+    background: white;
+    border-radius: 40px;
+    padding: 40px;
+    position: relative;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.05);
+    border: 5px solid #fefae0;
+}
+
+.sticker {
+    position: absolute;
+    top: -15px;
+    left: -15px;
+    background: #fb8500;
+    color: white;
+    padding: 5px 20px;
+    border-radius: 10px;
+    transform: rotate(-10deg);
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.img-box {
+    width: 100%;
+    height: 250px;
+    background: #f1f1f1;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 20px 0;
+    color: #999;
+    border: 2px dashed #ccc;
+}
+
+.memo-list {
+    list-style: none;
+    padding: 0;
+}
+
+.memo-list li {
+    background: #fefae0;
+    margin-bottom: 10px;
+    padding: 15px;
+    border-radius: 15px;
+    font-size: 1.4rem;
+}
+
+footer {
+    margin: 50px 0;
+    color: #999;
+}
