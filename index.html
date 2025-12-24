@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>나의 고교생활 기록장 ✨</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gaegu&family=Nanum+Pen+Script&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --main-pink: #ffdde1;
+            --main-yellow: #fff9ae;
+            --main-blue: #d4f1f9;
+            --text-color: #555;
+        }
+
+        body {
+            font-family: 'Gaegu', cursive;
+            background-color: #fdfbfb;
+            color: var(--text-color);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* 헤더 스타일 */
+        header {
+            background-color: var(--main-pink);
+            padding: 50px 20px;
+            text-align: center;
+            border-bottom: 5px dashed #fff;
+        }
+
+        header h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: #ff8a9d;
+            text-shadow: 2px 2px #fff;
+        }
+
+        /* 컨테이너 */
+        .container {
+            max-width: 800px;
+            margin: 30px auto;
+            padding: 0 20px;
+        }
+
+        /* 학년별 카드 */
+        .year-card {
+            background: white;
+            border-radius: 20px;
+            padding: 25px;
+            margin-bottom: 30px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.05);
+            border: 2px solid #eee;
+            transition: transform 0.3s ease;
+        }
+
+        .year-card:hover {
+            transform: translateY(-5px);
+        }
+
+        .year-1 { border-left: 10px solid var(--main-yellow); }
+        .year-2 { border-left: 10px solid var(--main-blue); }
+        .year-3 { border-left: 10px solid var(--main-pink); }
+
+        h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .emoji {
+            font-size: 2.5rem;
+            margin-right: 15px;
+        }
+
+        /* 리스트 스타일 */
+        ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        li {
+            padding: 10px 0;
+            border-bottom: 1px dotted #ccc;
+        }
+
+        li:last-child { border-bottom: none; }
+
+        /* 푸터 */
+        footer {
+            text-align: center;
+            padding: 40px;
+            font-size: 1.2rem;
+            color: #aaa;
+        }
+
+        /* 귀여운 버튼 */
+        .btn {
+            background: var(--main-pink);
+            border: none;
+            padding: 10px 20px;
+            border-radius: 50px;
+            color: white;
+            font-family: 'Gaegu';
+            font-size: 1.2rem;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>🌸 나의 고교 시절 기록장 🌸</h1>
+        <p>17세부터 19세까지, 우리의 소중한 이야기</p>
+    </header>
+
+    <div class="container">
+        
+        <div class="year-card year-1">
+            <h2><span class="emoji">🐣</span> 1학년 : 낯선 설렘</h2>
+            <p>모든 것이 처음이라 서툴렀던 17살의 봄!</p>
+            <ul>
+                <li>✨ 입학식: 어색했던 교복과 새로운 친구들</li>
+                <li>🥪 첫 소풍: 잔디밭에서 먹었던 도시락</li>
+                <li>📝 중간고사: 인생 첫 고등학교 시험의 충격!</li>
+            </ul>
+        </div>
+
+        <div class="year-card year-2">
+            <h2><span class="emoji">🐬</span> 2학년 : 즐거운 적응</h2>
+            <p>학교 생활의 전성기! 우리들의 우정이 깊어지는 시간.</p>
+            <ul>
+                <li>🚌 수학여행: 밤새도록 수다 떨던 숙소에서의 추억</li>
+                <li>🎸 축제: 동아리 공연과 맛있는 먹거리 부스</li>
+                <li>🏀 체육대회: 목이 터져라 응원했던 이어달리기</li>
+            </ul>
+        </div>
+
+        <div class="year-card year-3">
+            <h2><span class="emoji">🎓</span> 3학년 : 꿈을 향해</h2>
+            <p>조금은 힘들었지만, 가장 빛났던 마지막 고교 시절.</p>
+            <ul>
+                <li>☕ 야간 자율학습: 졸음을 쫓으며 마시던 캔커피</li>
+                <li>📸 졸업사진: 가장 예쁘고 멋진 모습으로 찰깍!</li>
+                <li>💌 수능 응원: 후배들의 따뜻한 응원과 떡</li>
+            </ul>
+        </div>
+
+    </div>
+
+    <footer>
+        <p>안녕, 나의 십대 시절! 🎈</p>
+        <button class="btn" onclick="alert('방명록 기능은 준비 중이에요! 🐾')">방명록 남기기</button>
+    </footer>
+
+</body>
+</html>
